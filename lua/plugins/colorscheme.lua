@@ -34,6 +34,7 @@ return {
           italic = false,
         },
       }
+      -- vim.cmd.colorscheme 'rose-pine'
     end,
   },
   {
