@@ -1,10 +1,10 @@
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>w', ':w<CR>', { silent = true, desc = 'Write down and save' })
 vim.keymap.set('n', '<leader>q', ':q<CR>', { silent = true, desc = 'Quit the window' })
-vim.keymap.set('n', '<leader>pv', ':Ex<CR>', { silent = true })
+vim.keymap.set('n', '<leader>e', ':Ex<CR>', { silent = true })
 
-vim.keymap.set('n', '<leader>x', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open diagnostic [E]rror message' })
+vim.keymap.set('n', '<leader>dq', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+vim.keymap.set('n', '<leader>de', vim.diagnostic.open_float, { desc = 'Open diagnostic [E]rror message' })
 
 vim.keymap.set('n', '<leader>tt', ':vsplit | terminal<CR>', { noremap = true, silent = true, desc = 'Open terminal vertically' })
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
