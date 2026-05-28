@@ -9,6 +9,11 @@ vim.keymap.set('n', '<leader>de', vim.diagnostic.open_float, { desc = 'Open diag
 vim.keymap.set('n', '<leader>tt', ':split | terminal<CR>', { noremap = true, silent = true, desc = 'Open terminal horizontally' })
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
+vim.keymap.set('n', '<leader>u', function()
+	vim.cmd.packadd('nvim.undotree')
+	require('undotree').open()
+end, {desc = 'toggle builtin undotree'})
+
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
