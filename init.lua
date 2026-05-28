@@ -1,7 +1,7 @@
 require 'option'
 require 'mapping'
 require 'autocmd'
-require 'lazy-setup'
+require 'pack'
 require 'plugins.treesitter'
 require 'plugins.lsp'
 require 'plugins.autocomplete'
