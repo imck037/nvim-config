@@ -26,3 +26,6 @@ vim.o.confirm = true
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 vim.g.netrw_banner = 0
+vim.diagnostic.config({
+	virtual_text = true,
+})
